@@ -11,8 +11,8 @@ function App() {
 
 return (
     <div className='flex h-full w-full'>
-        {/* <Sidebar /> */}
-        {/* <Dashboard1/> */}
+        {/* <Sidebar />
+        <Dashboard1/>  */}
         <Login/>
         
     </div>

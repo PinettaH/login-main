@@ -23,6 +23,7 @@ return (
                         
                         <TextField className='input' id="outlined-basic" label="Outlined" variant="outlined" />
                         <TextField className='input' id="outlined-basic" label="Outlined" variant="outlined" />
+                        <button className=' hover:bg-slate-500 rounded-lg'>iniciar sesion</button>
                         
                     </form>
             )}
@@ -33,6 +34,7 @@ return (
                             <TextField className='input' id="outlined-basic" label="Outlined" variant="outlined" />
                             <TextField className='input' id="outlined-basic" label="Outlined" variant="outlined" />
                             <TextField className='input' id="outlined-basic" label="Outlined" variant="outlined" />
+                            <button className=' hover:bg-slate-500 rounded-lg'>Registrarse</button>
                         </form>
             )}
                     </div>

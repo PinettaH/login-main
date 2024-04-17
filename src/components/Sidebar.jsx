@@ -1,5 +1,6 @@
 import { MoreVertical, ChevronLast, ChevronFirst,BriefcaseMedical,TriangleAlert, ClipboardCheck  } from "lucide-react"
 import { useContext, createContext, useState } from "react"
+import { Outlet } from "react-router-dom"
 
 const SidebarContext = createContext()
 
@@ -37,22 +38,23 @@ return (
     <button 
         className="p-1.5 mt-16 mb-16 rounded-lg bg-gray-50 hover:bg-blue-100 ml-4"
     >
-    {expanded ? "boton1" : <none />}
+    {expanded ? "Formulario" : <none />}
     </button>
     <button 
         className="p-1.5 mt-16 mb-16 rounded-lg bg-gray-50 hover:bg-blue-100 ml-4"
     >
-    {expanded ? "boton2" : <none/>}</button>
+    {expanded ? "Inicio" : <none/>}</button>
     <button 
         className="p-1.5 mt-16 mb-16 rounded-lg bg-gray-50 hover:bg-blue-100 ml-4"
     >
     {expanded ? "boton3" : <none/>}</button>
+    
     <button 
         className="p-1.5 mt-16 mb-16 rounded-lg bg-gray-50 hover:bg-blue-100 ml-4"
     >
-    {expanded ? "boton4": <none/>}
+    {expanded ? "cerrar sesion": <none/>}
     </button>
-
+            
   </div>
     </ul>
         </div>
@@ -82,7 +84,9 @@ return (
           </div>
         </div>
       </nav>
+      <Outlet/>
     </div>
+
 )
 }
 
