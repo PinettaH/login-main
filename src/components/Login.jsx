@@ -3,17 +3,25 @@ import { TextField } from '@mui/material'
 import "../stylesheets/Login.css"
 
 function Login() {
-    const [showRegisterForm, setShowRegisterForm] = useState(false)
-    const toggleRegisterForm =() => {
-        setShowRegisterForm(!showRegisterForm)
-    }
-    const [showLoginForm, setShowLoginForm] = useState(false)
-    const toggleLoginForm =() => {
-        setShowLoginForm(!showLoginForm)
-    }
+    const [showLoginForm, setShowLoginForm] = useState(false);
+    const [showRegisterForm, setShowRegisterForm] = useState(false);
+
+    const toggleLoginForm = () => {
+        setShowLoginForm(!showLoginForm);
+        setShowRegisterForm(false); 
+    };
+
+    const toggleRegisterForm = () => {
+        setShowRegisterForm(!showRegisterForm);
+        setShowLoginForm(false); 
+    };
 
 return (
+        <>
+        <div className='w-full bg-slate-600'>
 
+        
+        
         <div class="container">
             <div class="main">
                 <div class="login">
@@ -41,6 +49,8 @@ return (
                 </div>
             </div>
         </div>
+        </div>
+        </>
 )
 }
 
